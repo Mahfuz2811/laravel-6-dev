@@ -18,3 +18,14 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/admin/dashboard', 'DashboardController@index')->name('dashboard');
+
+Route::resource('/area', 'AreaController');
+Route::resource('/device', 'DeviceController');
+Route::resource('/employee', 'EmployeeController');
+Route::resource('/transaction', 'TransactionController');
+
+Route::get('/run-script', 'HomeController@runScript');
+Route::get('/get-connection', 'HomeController@getConnection');

@@ -1,0 +1,9 @@
+table.push-middle th{
+    vertical-align: middle !important;
+    text-align:center !important;
+}
+
+table.push-middle td{
+    vertical-align: middle !important;
+    text-align:center !important;
+}
